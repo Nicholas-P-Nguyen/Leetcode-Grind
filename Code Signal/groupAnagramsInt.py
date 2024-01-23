@@ -17,8 +17,8 @@ def question_1(a: list[int]):
     for num in a:
         numToString.append(str(num))
     
-    
     for number in numToString:
+        # Using the bucket sort method index is the digit/value is # of pairs
         intCount = [0] * 10      
         for digit in number:
             intCount[int(digit)] += 1
